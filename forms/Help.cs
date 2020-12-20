@@ -9,17 +9,11 @@ using System.Windows.Forms;
 
 namespace ChemVis
 {
-    public partial class Autorzy : Form
+    public partial class Help : Form
     {
-        public Autorzy(VSEPR vs)
+        public Help()
         {
             InitializeComponent();
-            label1.Text += vs.settings.Version;
-        }
-
-        private void Autorzy_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

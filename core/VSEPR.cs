@@ -306,26 +306,6 @@ namespace ChemVis
                     }
                 }
             }
-
-           /* List<fixedelement> t = new List<fixedelement>();
-
-            foreach (fixedelement r in current)
-            {
-                bool add = true;
-                foreach (fixedelement d in t)
-                {
-                    if (d.el == r.el)
-                    {
-                        add = false;
-                        d.count += r.count;
-                    }
-                }
-                if (add)
-                    t.Add(r);
-            }
-         
-            current = t;
-            */
             
             #endregion
 

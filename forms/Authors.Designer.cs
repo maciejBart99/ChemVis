@@ -1,6 +1,6 @@
 ﻿namespace ChemVis
 {
-    partial class Autorzy
+    partial class Authors
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Autorzy));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Authors));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -68,7 +68,7 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(298, 183);
             this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Autorzy:\r\nMaciej Łuaksik - główny programista";
+            this.textBox1.Text = "Authors:\r\nMaciej Łuaksik - główny programista";
             // 
             // pictureBox2
             // 
@@ -80,7 +80,7 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // Autorzy
+            // Authors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -94,11 +94,11 @@
             this.MaximumSize = new System.Drawing.Size(539, 266);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(539, 266);
-            this.Name = "Autorzy";
+            this.Name = "Authors";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Autorzy";
-            this.Load += new System.EventHandler(this.Autorzy_Load);
+            this.Text = "Authors";
+            this.Load += new System.EventHandler(this.Authors_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

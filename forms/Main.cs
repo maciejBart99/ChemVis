@@ -11,13 +11,13 @@ using Kitware.VTK;
 
 namespace ChemVis
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
         public Datavis datavis;
         public vtkRenderer win;
         public vtkCamera cam;
         public VSEPR vsepr;
-        public Form1()
+        public Main()
         {
             InitializeComponent();
             datavis = new Datavis(this);
@@ -48,7 +48,7 @@ namespace ChemVis
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Main_Load(object sender, EventArgs e)
         {
             vsepr.Load(datavis);
             checkBox1.Checked = vsepr.settings.ligand_repl;

@@ -10,7 +10,7 @@ namespace ChemVis
     public  class ELEMENT
     {
 
-      public string symbol;
+        public string symbol;
         public string name;
         public int index;
         public int wal; 
@@ -30,21 +30,15 @@ namespace ChemVis
                 splt = line.Split(new string[] { ";" }, StringSplitOptions.RemoveEmptyEntries);
                 if (splt.Length != 7)
                     //throw exception 
-                    try
-                    {
-                        symbol = splt[0];
-                        index = Convert.ToInt32(splt[1]);
-                        name = splt[2];
-                        wal = Convert.ToInt32(splt[3]);
-                        en = Convert.ToSingle(splt[4]);
-                        mass = Convert.ToSingle(splt[5]);
-                        radius = Convert.ToSingle(splt[6]);
-                        colorpref = new Vector3(Convert.ToSingle(splt[7].Split(new string[] { "/" }, StringSplitOptions.RemoveEmptyEntries)[0]), Convert.ToSingle(splt[7].Split(new string[] { "/" }, StringSplitOptions.RemoveEmptyEntries)[1]), Convert.ToSingle(splt[7].Split(new string[] { "/" }, StringSplitOptions.RemoveEmptyEntries)[2]));
-                    }
-                    catch
-                    {
-
-                    }
+                    symbol = splt[0];
+                    index = Convert.ToInt32(splt[1]);
+                    name = splt[2];
+                    wal = Convert.ToInt32(splt[3]);
+                    en = Convert.ToSingle(splt[4]);
+                    mass = Convert.ToSingle(splt[5]);
+                    radius = Convert.ToSingle(splt[6]);
+                    colorpref = new Vector3(Convert.ToSingle(splt[7].Split(new string[] { "/" }, StringSplitOptions.RemoveEmptyEntries)[0]), Convert.ToSingle(splt[7].Split(new string[] { "/" }, StringSplitOptions.RemoveEmptyEntries)[1]), Convert.ToSingle(splt[7].Split(new string[] { "/" }, StringSplitOptions.RemoveEmptyEntries)[2]));
+                 
             }
         }
 
@@ -145,12 +139,6 @@ namespace ChemVis
             string[] t = line[8].Split(new string[] { "=" }, StringSplitOptions.RemoveEmptyEntries)[1].Split(new string[] { "/" }, StringSplitOptions.RemoveEmptyEntries);
             backcolor = new Vector3(Convert.ToSingle(t[0]), Convert.ToSingle(t[1]), Convert.ToSingle(t[2]));
             Version = line[9].Trim().Split(new string[] { "=" }, StringSplitOptions.RemoveEmptyEntries)[1];
-        }
-
-        public void Save()
-        {
-
-
         }
     }
 }

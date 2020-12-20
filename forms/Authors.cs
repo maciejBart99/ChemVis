@@ -9,16 +9,12 @@ using System.Windows.Forms;
 
 namespace ChemVis
 {
-    public partial class pomoc : Form
+    public partial class Authors : Form
     {
-        public pomoc()
+        public Authors(VSEPR vs)
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            label1.Text += vs.settings.Version;
         }
     }
 }
