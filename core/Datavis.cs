@@ -10,7 +10,7 @@ namespace ChemVis
 {
     public class Datavis
     {
-        public Form1 form;
+        public Main form;
 
         public int current;
 
@@ -18,9 +18,9 @@ namespace ChemVis
 
         private Vis_type Visual_type=Vis_type.pretowy;
 
-        public Datavis(Form1 this_)
+        public Datavis(Main main)
         {
-            form = this_;
+            form = main;
         }
 
         public void LoadModel(List<Vissolution> solutions)
