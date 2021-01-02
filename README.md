@@ -2,7 +2,7 @@
 Old project (from 2014) - it is an app which can predict molecules structures using VSEPR method. 
 
 ## Requirements
-This application VTK to be installed on Your machine (version ^7)
+This application requires VTK to be installed on Your machine (version ^7)
 https://vtk.org/download/
 
 ## Limitations
